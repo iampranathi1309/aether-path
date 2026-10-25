@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +55,7 @@
       text-align: center;
       background:
         linear-gradient(rgba(32, 60, 52, .62), rgba(32, 60, 52, .72)),
-        url("career-guidance-background1.jpg") center / cover no-repeat;
+        url("career-guidance-background.jpeg") center / cover no-repeat;
     }
 
     .welcome-content {
@@ -558,22 +556,32 @@
       white-space: nowrap;
     }
 
-    .weekly-photo {
-      max-width: 870px;
-      margin: 30px auto 0;
+    .weekly-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
     }
 
-    .weekly-photo img {
-      display: block;
-      width: 100%;
-      height: auto;
+    .weekly-gallery figure {
+      margin: 0;
+      padding: 10px;
       border: 1px solid var(--border);
       border-radius: 14px;
+      background: var(--white);
       box-shadow: var(--shadow);
     }
 
-    .weekly-photo figcaption {
-      margin-top: 10px;
+    .weekly-gallery img {
+      display: block;
+      width: 100%;
+      height: 180px;
+      border-radius: 9px;
+      object-fit: cover;
+    }
+
+    .weekly-gallery figcaption {
+      padding: 8px 2px 2px;
       color: var(--muted);
       font-size: 13px;
       text-align: center;
@@ -656,66 +664,6 @@
         transition-duration: .01ms !important;
       }
     }
-    .weekly-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  margin: 24px 0;
-}
-
-.weekly-gallery figure {
-  margin: 0;
-  padding: 10px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--white);
-  box-shadow: var(--shadow);
-}
-
-.weekly-gallery img {
-  display: block;
-  width: 100%;
-  height: 180px;
-  border-radius: 9px;
-  object-fit: cover;
-}
-
-.weekly-gallery figcaption {
-  padding: 8px 2px 2px;
-  color: var(--muted);
-  font-size: 13px;
-  text-align: center;
-}
-.weekly-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  margin: 24px 0;
-}
-
-.weekly-gallery figure {
-  margin: 0;
-  padding: 10px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--white);
-  box-shadow: var(--shadow);
-}
-
-.weekly-gallery img {
-  display: block;
-  width: 100%;
-  height: 180px;
-  border-radius: 9px;
-  object-fit: cover;
-}
-
-.weekly-gallery figcaption {
-  padding: 8px 2px 2px;
-  color: var(--muted);
-  font-size: 13px;
-  text-align: center;
-}
   </style>
 </head>
 
@@ -1141,9 +1089,12 @@
           <h3>Week 1: Project Introduction and Planning</h3>
           <p><strong>Project:</strong> Career Guidance for Class 10 Students</p>
           <p>This week, our group introduced the Community Service Project at the Sachivalayam and discussed our plan to help Class 10 students learn about study streams and future career options.</p>
+
           <div class="weekly-table-wrap">
             <table class="weekly-table">
-              <thead><tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr></thead>
+              <thead>
+                <tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr>
+              </thead>
               <tbody>
                 <tr><td>Day 1</td><td>Visited the Sachivalayam.</td><td>Introduced our career-guidance project and respectfully requested permission to carry it out.</td></tr>
                 <tr><td>Day 2</td><td>Explained the project purpose.</td><td>Described how the project can help students understand study streams and pathways after Class 10.</td></tr>
@@ -1152,17 +1103,19 @@
                 <tr><td>Day 5</td><td>Reviewed the next steps.</td><td>Organised webpage topics and prepared to collect and check information for students.</td></tr>
               </tbody>
             </table>
-        </article>
-        <div class="weekly-gallery">
-  <figure>
-    <img src="images/sachivalayam.jpeg" alt="Week 1 activity photo 1">
-    <figcaption>Week 1 activity — Photo 1</figcaption>
-  </figure>
+          </div>
 
-  <figure>
-    <img src="images/img.jpeg" alt="Week 1 activity photo 2">
-    <figcaption>Week 1 activity — Photo 2</figcaption>
-  </figure>
+          <div class="weekly-gallery">
+            <figure>
+              <img src="images/sachivalayam.jpeg" alt="Week 1 Sachivalayam visit">
+              <figcaption>Week 1 activity — Sachivalayam visit</figcaption>
+            </figure>
+            <figure>
+              <img src="images/img.jpeg" alt="Another Week 1 project activity">
+              <figcaption>Week 1 project activity</figcaption>
+            </figure>
+          </div>
+        </article>
       </div>
 
       <div class="week-detail" id="week-2" hidden>
@@ -1171,9 +1124,12 @@
           <h3>Week 2: School Outreach and Permission</h3>
           <p><strong>Location:</strong> Nandavaram Model School, Marripadu Mandal</p>
           <p>Our group visited the school, discussed the project with the principal, received permission, and interacted with faculty and students.</p>
+
           <div class="weekly-table-wrap">
             <table class="weekly-table">
-              <thead><tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr></thead>
+              <thead>
+                <tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr>
+              </thead>
               <tbody>
                 <tr><td>Day 1</td><td>Visited Nandavaram Model School.</td><td>Introduced our group and explained the Class 10 career-guidance project.</td></tr>
                 <tr><td>Day 2</td><td>Met the principal and requested permission.</td><td>Explained our purpose and planned school interactions. Permission was received.</td></tr>
@@ -1183,32 +1139,14 @@
               </tbody>
             </table>
           </div>
+
           <div class="weekly-gallery">
-  <figure>
-    <img src="images/1.jpeg" alt="Week 2 activity photo 1">
-    <figcaption>Week 2 activity — Photo 1</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/2.jpeg" alt="Week 2 activity photo 2">
-    <figcaption>Week 2 activity — Photo 2</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/3.jpeg" alt="Week 2 activity photo 3">
-    <figcaption>Week 2 activity — Photo 3</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/school2.jpeg" alt="Week 2 activity photo 4">
-    <figcaption>Week 2 activity — Photo 4</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/week2.5.jpeg" alt="Week 2 activity photo 5">
-    <figcaption>Week 2 activity — Photo 5</figcaption>
-  </figure>
-</div>
+            <figure><img src="images/1.jpeg" alt="Week 2 activity photo 1"><figcaption>Week 2 activity — Photo 1</figcaption></figure>
+            <figure><img src="images/2.jpeg" alt="Week 2 activity photo 2"><figcaption>Week 2 activity — Photo 2</figcaption></figure>
+            <figure><img src="images/3.jpeg" alt="Week 2 activity photo 3"><figcaption>Week 2 activity — Photo 3</figcaption></figure>
+            <figure><img src="images/school2.jpeg" alt="Week 2 activity photo 4"><figcaption>Week 2 activity — Photo 4</figcaption></figure>
+            <figure><img src="images/week2.5.jpeg" alt="Week 2 activity photo 5"><figcaption>Week 2 activity — Photo 5</figcaption></figure>
+          </div>
         </article>
       </div>
 
@@ -1218,9 +1156,12 @@
           <h3>Week 3: Student Career Awareness and Interest Study</h3>
           <p><strong>Location:</strong> Kasturba Girls High School</p>
           <p>We visited the school, obtained the principal's permission, and spoke with students about their awareness, interests, future goals, and challenges in learning about career options. On the final day, we organised the information and analysed student interests.</p>
+
           <div class="weekly-table-wrap">
             <table class="weekly-table">
-              <thead><tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr></thead>
+              <thead>
+                <tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr>
+              </thead>
               <tbody>
                 <tr><td>Day 1</td><td>Visited Kasturba Girls High School.</td><td>Introduced our group and explained that our project supports Class 10 students in exploring education and career choices.</td></tr>
                 <tr><td>Day 2</td><td>Met the principal and requested permission.</td><td>Explained the purpose and planned student interactions. We obtained permission before proceeding.</td></tr>
@@ -1230,32 +1171,14 @@
               </tbody>
             </table>
           </div>
+
           <div class="weekly-gallery">
-  <figure>
-    <img src="images/week2.1.jpeg" alt="Week 3 activity photo 1">
-    <figcaption>Week 3 activity — Photo 1</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/week2.2.jpeg" alt="Week 3 activity photo 2">
-    <figcaption>Week 3 activity — Photo 2</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/week2.3.jpeg" alt="Week 3 activity photo 3">
-    <figcaption>Week 3 activity — Photo 3</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/week2.4.jpeg" alt="Week 3 activity photo 4">
-    <figcaption>Week 3 activity — Photo 4</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/principal1.jpeg" alt="Week 3 activity photo 5">
-    <figcaption>Week 3 activity — Photo 5</figcaption>
-  </figure>
-</div>
+            <figure><img src="images/week2.1.jpeg" alt="Week 3 activity photo 1"><figcaption>Week 3 activity — Photo 1</figcaption></figure>
+            <figure><img src="images/week2.2.jpeg" alt="Week 3 activity photo 2"><figcaption>Week 3 activity — Photo 2</figcaption></figure>
+            <figure><img src="images/week2.3.jpeg" alt="Week 3 activity photo 3"><figcaption>Week 3 activity — Photo 3</figcaption></figure>
+            <figure><img src="images/week2.4.jpeg" alt="Week 3 activity photo 4"><figcaption>Week 3 activity — Photo 4</figcaption></figure>
+            <figure><img src="images/principal1.jpeg" alt="Week 3 activity photo 5"><figcaption>Week 3 activity — Photo 5</figcaption></figure>
+          </div>
         </article>
       </div>
 
@@ -1265,9 +1188,12 @@
           <h3>Week 4: Career Guidance Study at Nandavaram Government School</h3>
           <p><strong>Location:</strong> Nandavaram Government School, Marripadu Mandal</p>
           <p>We visited the school, discussed our project with the principal and faculty, and learned about students' career awareness, interests, and questions.</p>
+
           <div class="weekly-table-wrap">
             <table class="weekly-table">
-              <thead><tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr></thead>
+              <thead>
+                <tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr>
+              </thead>
               <tbody>
                 <tr><td>Day 1</td><td>Visited Nandavaram Government School.</td><td>Introduced our group and explained the project's purpose.</td></tr>
                 <tr><td>Day 2</td><td>Met the principal and requested permission.</td><td>Explained the planned faculty and student interactions and received permission.</td></tr>
@@ -1277,29 +1203,13 @@
               </tbody>
             </table>
           </div>
+
           <div class="weekly-gallery">
-  <figure>
-    <img src="images/4.1.jpeg" alt="Week 4 activity photo 1">
-    <figcaption>Week 4 activity — Photo 1</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/4.2.jpeg" alt="Week 4 activity photo 2">
-    <figcaption>Week 4 activity — Photo 2</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/4.3.jpeg" alt="Week 4 activity photo 3">
-    <figcaption>Week 4 activity — Photo 3</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/school1.jpeg" alt="Week 4 activity photo 4">
-    <figcaption>Week 4 activity — Photo 4</figcaption>
-  </figure>
-
-</div>
-          
+            <figure><img src="images/4.1.jpeg" alt="Week 4 activity photo 1"><figcaption>Week 4 activity — Photo 1</figcaption></figure>
+            <figure><img src="images/4.2.jpeg" alt="Week 4 activity photo 2"><figcaption>Week 4 activity — Photo 2</figcaption></figure>
+            <figure><img src="images/4.3.jpeg" alt="Week 4 activity photo 3"><figcaption>Week 4 activity — Photo 3</figcaption></figure>
+            <figure><img src="images/school1.jpeg" alt="Week 4 activity photo 4"><figcaption>Week 4 activity — Photo 4</figcaption></figure>
+          </div>
         </article>
       </div>
 
@@ -1309,9 +1219,12 @@
           <h3>Week 5: Career Guidance Classes at Marripadu Government School</h3>
           <p><strong>Location:</strong> Government School, Marripadu</p>
           <p>Our group visited the school and conducted career-guidance classes for students.</p>
+
           <div class="weekly-table-wrap">
             <table class="weekly-table">
-              <thead><tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr></thead>
+              <thead>
+                <tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr>
+              </thead>
               <tbody>
                 <tr><td>Day 1</td><td>Visited the school and met the staff.</td><td>Introduced our group and discussed arrangements for the sessions.</td></tr>
                 <tr><td>Day 2</td><td>Introduced the purpose of the classes.</td><td>Discussed why learning about streams and careers can help students plan next steps.</td></tr>
@@ -1321,29 +1234,13 @@
               </tbody>
             </table>
           </div>
+
           <div class="weekly-gallery">
-  <figure>
-    <img src="images/5.1.jpeg" alt="Week 5 activity photo 1">
-    <figcaption>Week 5 activity — Photo 1</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/5.1.jpeg" alt="Week 5 activity photo 2">
-    <figcaption>Week 5 activity — Photo 2</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/5.3.jpeg" alt="Week 5 activity photo 3">
-    <figcaption>Week 5 activity — Photo 3</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/teacher.jpeg" alt="Week 5 activity photo 4">
-    <figcaption>Week 5 activity — Photo 4</figcaption>
-  </figure>
-
-
-</div>
+            <figure><img src="images/5.1.jpeg" alt="Week 5 activity photo 1"><figcaption>Week 5 activity — Photo 1</figcaption></figure>
+            <figure><img src="images/5.1.jpeg" alt="Week 5 activity photo 2"><figcaption>Week 5 activity — Photo 2</figcaption></figure>
+            <figure><img src="images/5.3.jpeg" alt="Week 5 activity photo 3"><figcaption>Week 5 activity — Photo 3</figcaption></figure>
+            <figure><img src="images/teacher.jpeg" alt="Week 5 activity photo 4"><figcaption>Week 5 activity — Photo 4</figcaption></figure>
+          </div>
         </article>
       </div>
 
@@ -1353,9 +1250,12 @@
           <h3>Week 6: Career Guidance for Another Class 10 Section</h3>
           <p><strong>Location:</strong> AP Model School, Nandavaram, Marripadu Mandal</p>
           <p>We returned to the school and conducted career-guidance activities with students from another Class 10 section.</p>
+
           <div class="weekly-table-wrap">
             <table class="weekly-table">
-              <thead><tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr></thead>
+              <thead>
+                <tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr>
+              </thead>
               <tbody>
                 <tr><td>Day 1</td><td>Returned to the school and met the section teacher.</td><td>Explained our plan to conduct the activity with another Class 10 section.</td></tr>
                 <tr><td>Day 2</td><td>Introduced the project to the new students.</td><td>Explained the project's purpose and invited students to consider their interests.</td></tr>
@@ -1365,29 +1265,13 @@
               </tbody>
             </table>
           </div>
+
           <div class="weekly-gallery">
-  <figure>
-    <img src="images/6.1.jpeg" alt="Week 6 activity photo 1">
-    <figcaption>Week 6 activity — Photo 1</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/6.2.jpeg" alt="Week 6 activity photo 2">
-    <figcaption>Week 6 activity — Photo 2</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/6.3.jpeg" alt="Week 6 activity photo 3">
-    <figcaption>Week 6 activity — Photo 3</figcaption>
-  </figure>
-
-  <figure>
-    <img src="images/school2.jpeg" alt="Week 6 activity photo 4">
-    <figcaption>Week 6 activity — Photo 4</figcaption>
-  </figure>
-
-  
-</div>
+            <figure><img src="images/6.1.jpeg" alt="Week 6 activity photo 1"><figcaption>Week 6 activity — Photo 1</figcaption></figure>
+            <figure><img src="images/6.2.jpeg" alt="Week 6 activity photo 2"><figcaption>Week 6 activity — Photo 2</figcaption></figure>
+            <figure><img src="images/6.3.jpeg" alt="Week 6 activity photo 3"><figcaption>Week 6 activity — Photo 3</figcaption></figure>
+            <figure><img src="images/school2.jpeg" alt="Week 6 activity photo 4"><figcaption>Week 6 activity — Photo 4</figcaption></figure>
+          </div>
         </article>
       </div>
 
@@ -1396,9 +1280,12 @@
         <article class="weekly-report">
           <h3>Week 7: Team Discussion on Student Challenges</h3>
           <p>All team members discussed the problems and information gaps observed during our student interactions.</p>
+
           <div class="weekly-table-wrap">
             <table class="weekly-table">
-              <thead><tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr></thead>
+              <thead>
+                <tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr>
+              </thead>
               <tbody>
                 <tr><td>Day 1</td><td>Shared team observations.</td><td>Each member described notes from student interactions and guidance sessions.</td></tr>
                 <tr><td>Day 2</td><td>Reviewed students' questions.</td><td>Discussed questions about streams, courses, qualifications, and career opportunities.</td></tr>
@@ -1416,9 +1303,12 @@
         <article class="weekly-report">
           <h3>Week 8: Aether Path Introduction and Student Feedback</h3>
           <p>We introduced Aether Path to students, demonstrated its career-guidance information, and collected their feedback about the application.</p>
+
           <div class="weekly-table-wrap">
             <table class="weekly-table">
-              <thead><tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr></thead>
+              <thead>
+                <tr><th>Day</th><th>Activity</th><th>Observations / Notes</th></tr>
+              </thead>
               <tbody>
                 <tr><td>Day 1</td><td>Prepared the application demonstration.</td><td>Organised the Aether Path sections and planned how to introduce them to students.</td></tr>
                 <tr><td>Day 2</td><td>Introduced Aether Path.</td><td>Explained how the application can help students explore options after Class 10.</td></tr>
